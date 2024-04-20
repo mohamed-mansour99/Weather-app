@@ -92,7 +92,7 @@ const Home = () => {
         </div>
         <div>
           <h3 className="text-[#000] font-bold text-[20px] mb-6">
-            AIR CONDITIONS
+            {t("AIR CONDITIONS")}
           </h3>
           <div className="flex flex-col gap-6 max-lg:flex-row">
             <div className="text-[#000] text-[18px] flex gap-1 items-start">

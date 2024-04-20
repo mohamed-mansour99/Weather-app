@@ -7,7 +7,8 @@ import orSignUp from "../assets/ourSignUp.png";
 import google from "../assets/google.png";
 import facebook from "../assets/facebook.png";
 import instagram from "../assets/instagram.png";
-
+import { IoMdArrowDropdown } from "react-icons/io";
+ 
 const Signup = () => {
   const [tooglePassword, setTooglePassword] = useState(true);
   const [name, setName] = useState("");
@@ -46,13 +47,21 @@ const Signup = () => {
   return (
     <div className="singup h-[100vh] flex flex-row-reverse ">
       <div className="bg-[#fff] w-[50%] rounded-tl-[30px]  rounded-bl-[30px] flex flex-col p-7 max-lg:w-full">
-        <div className="text-[#000] text-[20px] font-bold text-right">
-          <button
+        <div className="text-[#000] text-[20px] font-bold text-right ">
+        <div className="dropdown dropdown-end">
+  <div tabIndex={0} role="button" className="flex items-center gap-1 ">
+  <IoMdArrowDropdown /> {i18n.language === "ar" ? "🇪🇬عربي" : "English 🇺🇸"}
+
+  </div>
+  <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box w-52">
+     <li><button
             className="text-[#000] text-[17px]"
             onClick={() => setlang(i18n.language === "ar" ? "en" : "ar")}
           >
             {i18n.language === "ar" ? "English 🇺🇸" : "🇪🇬عربي"}
-          </button>
+          </button></li>
+  </ul>
+</div>
         </div>
         <div className="flex flex-col items-start mt-[70px]">
           <h1 className="text-[#000] text-[50px] ">{t("Create Account")}</h1>

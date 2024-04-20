@@ -20,3 +20,6 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
 }
+ul.dropdown-content.z-\[1\].menu.shadow.bg-base-100.rounded-box.w-52{
+    background: rgb(255, 255, 255);
+}

@@ -47,7 +47,7 @@ const Home = () => {
  {/* /////////////////////////MainContainer////////////////////////////////// */}
 
       <div className="w-[70%] flex flex-col justify-between  max-lg:w-full max-sm:flex-wrap max-sm:h-full">
-        <div className="flex  h-[50%] justify-between gap-7  max-sm:flex-wrap max-sm:w-full max-sm:h-full">
+        <div className="flex mb-[20px]  h-[50%] justify-between gap-7  max-sm:flex-wrap max-sm:w-full max-sm:h-full">
           <div className="w-[60%] max-sm:w-full h-[85%] border border-[#fff]  rounded-[20px] bg-[#FFFFFF66] p-9 flex flex-col justify-around max-lg:h-full ">
             <div className="text-[#000]">
               <p className="text-[23px] ">{t('Current Weather')}</p>

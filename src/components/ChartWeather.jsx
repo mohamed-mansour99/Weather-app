@@ -155,7 +155,7 @@ const ChartWeather = () => {
   }, [lang]);
 
   return (
-    <div className="w-full mb-[10px]  h-[400px] bg-[#FFFFFF66] border border-1 border-[#fff] rounded-[20px]  max-lg:h-[300px] ">
+    <div className="w-full mb-[10px]  h-[270px] bg-[#FFFFFF66] border border-1 border-[#fff] rounded-[20px]  max-lg:h-[300px] ">
       <ResponsiveContainer width="100%" height="100%" className="p-7">
       <h2 className="text-[24px] text-[#000] flex flex-row-reverse gap-2 justify-end">
       <span> {t("4-hour forecast")}</span>
